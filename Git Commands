@@ -17,3 +17,10 @@ After cloning, you will have a local copy of the repository, and you can navigat
 If you want to pull from a specific branch: git pull origin <branch-name>
 git pull is essentially a combination of git fetch (which fetches changes from the remote) and git merge (which merges the changes into your current branch).
 If you have uncommitted changes, Git may not allow the pull until you've either committed or stashed your changes. In that case, you might need to use git stash or commit the changes first.
+git clone <repository-url>  # Clone the repository (if you haven't already)
+cd repository-name          # Navigate to the repository directory
+git fetch                   # Fetch the branch list from the remote
+git checkout feature-branch # Check out the specific branch
+git pull origin feature-branch  # Pull the latest changes from the remote branch
+If you just cloned the repository, it will default to the main branch (often main or master).
+If you want to switch to a branch that's on the remote but not yet available locally, you can run git checkout -b <branch-name> origin/<branch-name> to create and check out the branch in one step.
