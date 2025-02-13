@@ -24,3 +24,11 @@ git checkout feature-branch # Check out the specific branch
 git pull origin feature-branch  # Pull the latest changes from the remote branch
 If you just cloned the repository, it will default to the main branch (often main or master).
 If you want to switch to a branch that's on the remote but not yet available locally, you can run git checkout -b <branch-name> origin/<branch-name> to create and check out the branch in one step.
+Steps to Push Code with Commit Messages
+  Navigate to the Project Directory : cd /path/to/your/project
+  Check the Status of Your Repository: git status
+  Add Files to Staging Area
+    To add specific files:git add <file-name>
+    To add all changed files: git add .
+Commit Changes with a Message: git commit -m "Your commit message describing the changes"
+Push the Changes to the Remote Repository: git push origin <repository-name>
