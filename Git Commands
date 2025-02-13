@@ -10,3 +10,10 @@ git push -u origin main
 git remote add origin https://github.com/KriticaGoel/GitCommands.git
 git branch -M main
 git push -u origin main
+Clone code first time from GIT
+Initialize a Git Repository (if not already initialized): git init
+Clone the Repository (if you haven’t cloned it yet): git clone <repository-url>
+After cloning, you will have a local copy of the repository, and you can navigate into the project folder to start using Git commands: cd repository-name
+If you want to pull from a specific branch: git pull origin <branch-name>
+git pull is essentially a combination of git fetch (which fetches changes from the remote) and git merge (which merges the changes into your current branch).
+If you have uncommitted changes, Git may not allow the pull until you've either committed or stashed your changes. In that case, you might need to use git stash or commit the changes first.
